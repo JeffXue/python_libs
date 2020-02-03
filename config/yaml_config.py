@@ -5,9 +5,9 @@
 
 import yaml
 
-CONFIG_FILE = './config.yml'
+CONFIG_PATH = './config.yml'
 
-config = yaml.safe_load(open(CONFIG_FILE))
+config = yaml.safe_load(open(CONFIG_PATH))
 
 
 if __name__ == '__main__':

@@ -3,10 +3,10 @@
 import configparser
 import os
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+CONFIG_PATH = os.path.dirname(os.path.abspath(__file__))
 
 conf_parser = configparser.ConfigParser()
-with open(os.path.join(ROOT_DIR, 'config.ini'), 'r', encoding="utf-8") as cfg:
+with open(os.path.join(CONFIG_PATH, 'config.ini'), 'r', encoding="utf-8") as cfg:
     conf_parser.read_file(cfg)
 
 
