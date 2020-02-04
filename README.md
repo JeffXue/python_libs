@@ -27,10 +27,12 @@ def example_function(param1, param2):
 
 ```
 
+---
+
 # 隔离环境：虚拟环境
 virtualenv 是一个创建隔绝的Python环境的 工具。virtualenv创建一个包含所有必要的可执行文件的文件夹，用来使用Python工程所需的包
 
-若对于本地集中式管理python虚拟环境，可以使用conda
+若对于本地集中式管理python虚拟环境，可以使用conda: [Create virtual environments for python with conda](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)
 ```
 # 安装virtualenv
 pip install virtualenv
