@@ -54,3 +54,16 @@ pip freeze > requirements.txt
 deactivate
 
 ```
+
+---
+
+# 库说明
+
+- `structure`: 包括常规了目录结构样式
+- `config`: 包括ini、环境变量、yaml三种配置方式
+- `log`: 包括logging模块常规使用方式和yaml配置日志方式
+- `db`: 包括了mysql（pymysql、records、sqlalchemy）和mongodb的连接方式
+- `time_utils.py`: 常用的一些时间操作方法
+- `sys_utils.py`: 常用的操作系统操作方法
+- `calculate_utils.py`: 常用的计算方法
+- `whyemail.py`: 发送邮件
