@@ -1,0 +1,44 @@
+---
+version: 1
+disable_existing_loggers: False
+formatters:
+    detail:
+        format: "%(asctime)s %(filename)s[%(funcName)s:%(lineno)d] %(levelname)-8s %(message)s"
+
+handlers:
+    console:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: detail
+
+    debug_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: DEBUG
+        formatter: detail
+        filename: debug.log
+        when: D
+        backupCount: 20
+        encoding: utf8
+
+
+    info_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: INFO
+        formatter: detail
+        filename: info.log
+        when: D
+        backupCount: 20
+        encoding: utf8
+
+    error_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: ERROR
+        formatter: detail
+        filename: errors.log
+        when: D
+        backupCount: 20
+        encoding: utf8
+
+root:
+    level: INFO
+    handlers: [console, debug_file_handler, info_file_handler, error_file_handler]
