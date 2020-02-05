@@ -39,4 +39,5 @@ if __name__ == '__main__':
     except (SystemExit, KeyboardInterrupt):
         raise
     except Exception as e:
-        logger.error('Failed to open file', exc_info=True)
+        # logger.error('Failed to open file', exc_info=True)
+        logger.exception('Failed to open file')
